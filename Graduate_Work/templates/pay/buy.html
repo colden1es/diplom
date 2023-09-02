@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment</title>
+</head>
+<body>
+<h1>{{ Product.name }}</h1>
+<p>{{ Product.description }}</p>
+<form method="post">
+  {% csrf_token %}
+  <input type="submit" value="Купить">
+</form>
+</body>
+</html>
